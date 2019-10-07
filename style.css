@@ -50,7 +50,7 @@ body{
 
 .border{
 	border-style: solid;
-    border-width:7px;
+   	 border-width:7px;
 	border-color: black;
 	display: flex;
 	
@@ -61,12 +61,6 @@ body{
 	width:50%;
 	display:flex;
 }
-
-/*.width{
-	width:70%;
-	max-width:100%;
-	max-height:100%;
-}*/
 
 .photo {
 	content: url("images/live.png");
@@ -138,7 +132,7 @@ p{
 
 
 .width{
- width:70%;
+	 width:70%;
 }
 
 
@@ -154,9 +148,9 @@ p{
 	height:90%;
 }
 .flip-box {
-  background-color: transparent;
-  width: 90%;
-  height: 90%;
+	background-color: transparent;
+	width: 90%;
+	height: 90%;
 }
 
 .chicken{
@@ -165,73 +159,67 @@ p{
 }
 
 .flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
 }
 
 .flip-box:hover .flip-box-inner {
-  transform: rotateX(180deg);
+	transform: rotateX(180deg);
 }
 
 .flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
 }
 
 .flip-box-front {
-  background-color: #bbb;
-  color: black;
+	background-color: #bbb;
+	color: black;
 }
 
 .flip-box-back {
-  background-color: #b9d3e5;
-  transform: rotateX(180deg);
+	background-color: #b9d3e5;
+	transform: rotateX(180deg);
 }
 
-
+/*The @media sets the dimentions based on the size of the screen of the device*/
 @media only screen and (max-width:800px){
 	body{
 		-webkit-animation: bgcolor 20s infinite;
 		animation: bgcolor 10s infinite;
 		-webkit-animation-direction: alternate;
 		animation-direction: alternate;
-		display:block;
-		
+		display:block;	
 	}
 	.photo {
-	content: url("images/live2.png");
-	max-width:100%;
-	max-height:100%;
+		content: url("images/live2.png");
+		max-width:100%;
+		max-height:100%;
 	}
-	
 	.gone{
 		display:none;
 	}
-	
 	.content{
 		display:block;
 		height:calc(85% - 14px);
 		width:100%;
-	}
 	
 	.content2{
 		display:block;
 		height:calc(52% - 14px);
 		width:100%;
 	}
-	
 	.content3{
 		display:block;
 		height:270%;
 		width:100%;
 	}
-	
 	.half-page{
 		width:100%;
 		height:50%;
@@ -239,11 +227,8 @@ p{
 		justify-content: center;
 		align-items: center;
 	}
-	
 	p{
 		font-size:150%;
 		margin-top:10%;
 	}
-		
-	
 }
